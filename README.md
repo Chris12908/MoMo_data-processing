@@ -15,7 +15,7 @@ The project focuses on backend data processing (ETL), database management, front
 
 
 ## Architecture diagram link:
-
+https://drive.google.com/file/d/1NctBSXok1VWAyXqtTaSW2YFQbw4JQwsE/view?usp=sharing
 
 
 ## scrum board link: 

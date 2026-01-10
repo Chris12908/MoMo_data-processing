@@ -13,3 +13,11 @@ The project focuses on backend data processing (ETL), database management, front
 - Rida Gasaro
 - Ghislaine Ineza
 
+
+## Architecture diagram link:
+
+
+
+## scrum board link: 
+
+

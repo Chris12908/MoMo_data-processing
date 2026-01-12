@@ -11,7 +11,7 @@ The project focuses on backend data processing (ETL), database management, front
 ## Team Members
 - Chris Marcel Hakizimana
 - Rida Isaro
-- Ghislaine Ineza
+- Ghislaine Marie Ineza
 
 
 ## Architecture diagram link:

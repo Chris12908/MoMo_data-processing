@@ -1,0 +1,12 @@
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(60) NOT NULL,
+    phone_number VARCHAR(13) NOT NULL UNIQUE
+);
+
+INSERT INTO users (username, phone_number) VALUES
+('YAKA','250757374897'),
+('NZOVU','250763567632'),
+('Chris','250796233546'),
+('G-TUFF','250778783746'),
+('Kevin','250745654467');

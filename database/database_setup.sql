@@ -1,4 +1,4 @@
-CREATE DATABASE momo_db;
+CREATE DATABASE IF NOT EXISTS momo_db;
 USE momo_db;
 
 source users.sql;

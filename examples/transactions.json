@@ -1,0 +1,9 @@
+{
+  "transaction_id": 5001,
+  "category_id": 1,
+  "amount": 25000.0,
+  "currency": "RWF",
+  "fee": 200.0,
+  "balance": 120000.0,
+  "transaction": "2026-01-25T10:15:30Z"
+}

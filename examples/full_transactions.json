@@ -1,0 +1,41 @@
+{
+  "transaction": {
+    "transaction_id": 5001,
+    "amount": 25000.0,
+    "currency": "RWF",
+    "fee": 200.0,
+    "balance": 120000.0,
+    "transaction_datetime": "2026-01-25T10:15:30Z",
+    "category": {
+      "category_id": 1,
+      "category_name": "Transfer",
+      "description": "Money sent from one user to another"
+    },
+    "participants": [
+      {
+        "role": "The sender",
+        "user": {
+          "user_id": 1,
+          "username": "chris",
+          "phone_number": "250796233546"
+        }
+      },
+      {
+        "role": "The receiver",
+        "user": {
+          "user_id": 2,
+          "username": "Eric M.",
+          "phone_number": "0722000111"
+        }
+      }
+    ],
+    "system_logs": [
+      {
+        "log_id": 9001,
+        "sms_text": "You have sent 25,000 RWF to 0788XXXXXX. Fee: 200 RWF. Balance: 120,000 RWF.",
+        "processed_status": "processed",
+        "log_timestamp": "2026-01-25T10:15:35Z"
+      }
+    ]
+  }
+}

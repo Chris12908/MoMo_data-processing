@@ -13,7 +13,7 @@ we updated the database to handle mobile money transaction data receives via SMS
 
 ## Team Members
 - Chris Marcel Hakizimana
-- Rida Isaro
+- Ridaa Isaro
 - Ghislaine Marie Ineza
 
 

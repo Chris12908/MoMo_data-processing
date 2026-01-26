@@ -1,7 +1,7 @@
 {
-  "log_id": 9001,
-  "transaction_id": 5001,
-  "sms_text": "You have sent 25,000 RWF to 0788XXXXXX. Fee: 200 RWF. Balance: 120,000 RWF.",
-  "processed_status": "processed",
+  "log_id": 5,
+  "transaction_id": 1,
+  "sms_text": "You have sent 5,000 RWF to 0788XXXXXX. Fee: 150 RWF. Balance: 12,000 RWF.",
+  "processed_status": "completed",
   "log_timestamp": "2026-01-25T10:15:35Z"
 }

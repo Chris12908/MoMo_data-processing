@@ -9,13 +9,22 @@ This project is a full-stack application designed to process and analyze Mobile 
 The project focuses on backend data processing (ETL), database management, frontend development, and collaborative software development using Agile practices.
 
 we updated the database to handle mobile money transaction data receives via SMS. The system will store,process and alsp analyse information while maintaining the data integrity and supporting scalability.
+we Have the core entities as follows:
+Core Entities
+
+Users -  senders and receivers
+Transaction Categories - The types of mobile money operations
+Transactions - Main transaction records
+User_Transaction - The roles of the users in the transaction processes
+System Logs - Tracks SMS processing and system activity
  
 
 ## Team Members
 - Chris Marcel Hakizimana
 - Ridaa Isaro
 - Ghislaine Marie Ineza
-
+  
+Below we have provided the links to the ER diagram and the updated Scrum board.
 
 ## ER diagram link:
 (https://drive.google.com/file/d/11lfVnGE1-PbrHB91BmZSzL-Xl-utAZUy/view?usp=sharing)

@@ -24,7 +24,7 @@ System Logs - Tracks SMS processing and system activity
 - Ridaa Isaro
 - Ghislaine Marie Ineza
   
-Below we have provided the links to the ER diagram and the updated Scrum board.
+Below we have provided the links to the architecture diagram and the updated Scrum board.
 
 ## Architecture Diagram link:
 https://drive.google.com/file/d/1NctBSXok1VWAyXqtTaSW2YFQbw4JQwsE/view?usp=sharing

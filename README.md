@@ -50,8 +50,8 @@ System Logs - Tracks SMS processing and system activity.
   
 Below we have provided the links to the Architecture diagram and the updated Scrum board.
 
-## ER Diagram link:
-https://drive.google.com/file/d/11lfVnGE1-PbrHB91BmZSzL-Xl-utAZUy/view?usp=sharing
+## Architecture Diagram link:
+https://drive.google.com/file/d/1NctBSXok1VWAyXqtTaSW2YFQbw4JQwsE/view?usp=sharing
 ## scrum board link:
 https://trello.com/invite/b/6965162b5006fa9fd2eebfdc/ATTI5be015b7274fc3e1d965632481e1d686DF324D4A/ewd-group-momo-data-processing-scrum-board
 

@@ -1,8 +1,11 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import os
+import base64
 
 DATA_FILE = os.path.join("dsa", "transactions.json")
+USERNAME = "admin"
+PASSWORD = "password"
 
 def load_transactions():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -11,6 +14,16 @@ def load_transactions():
 def save_transactions(data):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+        
+def check_auth(self):
+    if not is_autheticated (self.headers):
+        self.send_response(401)
+        self.send_header("WWW-Authenticate", 'Basic realm="MoMo API"')
+        self.end_headers()
+        self.wfile.write(b"unauthorized")
+        return false
+        return true
+            
 
 class MoMoAPIHandler(BaseHTTPRequestHandler):
 
@@ -22,6 +35,9 @@ class MoMoAPIHandler(BaseHTTPRequestHandler):
 
     # GET
     def do_GET(self):
+        if not self.check_auth():
+            return
+            
         transactions = load_transactions()
 
         if self.path == "/transactions":
@@ -43,6 +59,9 @@ class MoMoAPIHandler(BaseHTTPRequestHandler):
 
     # POST
     def do_POST(self):
+        if not self.check_auth():
+            return
+            
         if self.path == "/transactions":
             transactions = load_transactions()
 
@@ -60,6 +79,9 @@ class MoMoAPIHandler(BaseHTTPRequestHandler):
 
     # PUT
     def do_PUT(self):
+        if not self.check_auth():
+            return
+            
         if self.path.startswith("/transactions/"):
             try:
                 tx_id = int(self.path.split("/")[-1])
@@ -82,6 +104,9 @@ class MoMoAPIHandler(BaseHTTPRequestHandler):
 
     # DELETE
     def do_DELETE(self):
+        if not self.check_auth():
+            return
+            
         if self.path.startswith("/transactions/"):
             try:
                 tx_id = int(self.path.split("/")[-1])

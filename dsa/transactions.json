@@ -1,25 +1,5 @@
 [
     {
-        "id": 1,
-        "type": "RECEIVED",
-        "amount": 2000,
-        "sender": "Jane Smith",
-        "receiver": null,
-        "timestamp": "10 May 2024 4:30:58 PM",
-        "raw_message": "You have received 2000 RWF from Jane Smith (*********013) on your mobile money account at 2024-05-10 16:30:51. Message from sender: . Your new balance:2000 RWF. Financial Transaction Id: 76662021700.",
-        "service": "M-Money"
-    },
-    {
-        "id": 2,
-        "type": "PAYMENT",
-        "amount": 1000,
-        "sender": null,
-        "receiver": "Jane Smith",
-        "timestamp": "10 May 2024 4:31:46 PM",
-        "raw_message": "TxId: 73214484437. Your payment of 1,000 RWF to Jane Smith 12845 has been completed at 2024-05-10 16:31:39. Your new balance: 1,000 RWF. Fee was 0 RWF.Kanda*182*16# wiyandikishe muri poromosiyo ya BivaMoMotima, ugire amahirwe yo gutsindira ibihembo bishimishije.",
-        "service": "M-Money"
-    },
-    {
         "id": 3,
         "type": "PAYMENT",
         "amount": 600,
@@ -16908,5 +16888,13 @@
         "timestamp": "16 Jan 2025 12:13:29 AM",
         "raw_message": "TxId: 37832903831. Your payment of 24,900 RWF to Robert Brown 23478 has been completed at 2025-01-16 00:13:22. Your new balance: 4,900 RWF. Fee was 0 RWF.",
         "service": "M-Money"
+    },
+    {
+        "transaction_type": "Send Money",
+        "amount": 10000,
+        "sender": "0712345678",
+        "receiver": "0723456789",
+        "timestamp": "2024-02-02 14:30:00",
+        "id": 1692
     }
 ]

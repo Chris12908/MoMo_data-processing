@@ -1,7 +1,7 @@
 # MoMo SMS REST API Documentation
 
 ## Overview
-The REST API allows access to Mobile Money (MoMo) SMS transaction data in XML format and stored in a format of JSON. The API can be used to enable clients to access, create, modify, and delete records of transactions in a safe and orderly manner.
+The REST API allows access to Mobile Money SMS transaction data in XML format and stored in a format of>
 ## Base URL
 http://localhost:8000
 
@@ -58,7 +58,7 @@ Creates a new transaction.
 400 Bad Request
 
 
-##PUT /transactions/{id}
+###PUT /transactions/{id}
 Updates an existing transaction by ID.
 
 ##Request Example:
@@ -89,7 +89,7 @@ Updates an existing transaction by ID.
 404 Not Found
 
 
-##DELETE /transactions/{id}
+###DELETE /transactions/{id}
 Deletes a transaction by ID.
 
 ##Request Example:
@@ -104,5 +104,4 @@ DELETE /transactions/1692 HTTP/2
 ##Error Codes:
 
 404 Not Found
-
 

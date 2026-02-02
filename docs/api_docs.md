@@ -1,8 +1,7 @@
 # MoMo SMS REST API Documentation
 
 ## Overview
-This REST API provides access to Mobile Money SMS transaction data parsed from XML and stored in JSON format.
-
+The REST API allows access to Mobile Money (MoMo) SMS transaction data in XML format and stored in a format of JSON. The API can be used to enable clients to access, create, modify, and delete records of transactions in a safe and orderly manner.
 ## Base URL
 http://localhost:8000
 
@@ -13,16 +12,19 @@ http://localhost:8000
 ### GET /transactions
 Returns all transactions.
 
-**Response Codes**: 
+**Response Codes**:
 - 200 OK
 
----
+**Error codes**
+404 Not Found
 
 ### GET /transactions/{id}
 Returns a single transaction by ID.
 
-**Response Codes**: 
-- 200 OK 
+**Response Codes**:
+- 200 OK
+
+**Error codes**
 - 404 Not Found
 
 ---
@@ -40,4 +42,67 @@ Creates a new transaction.
   "receiver": "Shop",
   "timestamp": "2024-02-01"
 }
+
+
+##Response Example (created)
+{
+  "id": 1692,
+  "type": "PAYMENT",
+  "amount": 3000,
+  "sender": "Alice",
+  "receiver": "Shop",
+  "timestamp": "2024-02-01"
+}
+
+#Error codes
+400 Bad Request
+
+
+##PUT /transactions/{id}
+Updates an existing transaction by ID.
+
+##Request Example:
+
+```json
+
+{
+  "amount": 3500,
+  "receiver": "New Shop"
+}
+
+##Response Example (200 OK):
+
+{
+  "id": 1692,
+  "type": "PAYMENT",
+  "amount": 3500,
+  "sender": "Alice",
+  "receiver": "New Shop",
+  "timestamp": "2024-02-01"
+}
+
+
+
+##Error Codes:
+
+400 Bad Request
+404 Not Found
+
+
+##DELETE /transactions/{id}
+Deletes a transaction by ID.
+
+##Request Example:
+DELETE /transactions/1692 HTTP/2
+
+##Response Example (200 OK):
+
+{
+  "message": "Transaction deleted"
+}
+
+##Error Codes:
+
+404 Not Found
+
 
